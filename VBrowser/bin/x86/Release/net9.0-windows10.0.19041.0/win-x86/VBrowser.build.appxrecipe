@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-KQNC2PT</Machine>
+    <WindowsUser>Varun</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>58174266-c3ef-440f-9f19-bfae0278f321</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Varun</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\Varun\source\repos\VBrowser\VBrowser\bin\x86\Release\net9.0-windows10.0.19041.0\win-x86\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\bin\x86\Release\net9.0-windows10.0.19041.0\win-x86\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\bin\x86\Release\net9.0-windows10.0.19041.0\win-x86\VBrowser.runtimeconfig.json">
+      <PackagePath>VBrowser.runtimeconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\apphost.exe">
+      <PackagePath>VBrowser.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\Microsoft.DiaSymReader.Native.x86.dll">
+      <PackagePath>Microsoft.DiaSymReader.Native.x86.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\System.IO.Compression.Native.dll">
+      <PackagePath>System.IO.Compression.Native.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\clretwrc.dll">
+      <PackagePath>clretwrc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\clrgc.dll">
+      <PackagePath>clrgc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\clrjit.dll">
+      <PackagePath>clrjit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\coreclr.dll">
+      <PackagePath>coreclr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\createdump.exe">
+      <PackagePath>createdump.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\hostfxr.dll">
+      <PackagePath>hostfxr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\hostpolicy.dll">
+      <PackagePath>hostpolicy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\mscordaccore.dll">
+      <PackagePath>mscordaccore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\mscordaccore_x86_x86_9.0.1526.17522.dll">
+      <PackagePath>mscordaccore_x86_x86_9.0.1526.17522.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\mscordbi.dll">
+      <PackagePath>mscordbi.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\mscorrc.dll">
+      <PackagePath>mscorrc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.netcore.app.runtime.win-x86\9.0.15\runtimes\win-x86\native\msquic.dll">
+      <PackagePath>msquic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.web.webview2\1.0.3912.50\runtimes\win-x86\native\WebView2Loader.dll">
+      <PackagePath>WebView2Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.foundation\1.8.260222000\runtimes\win-x86\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.foundation\1.8.260222000\runtimes\win-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.web.webview2\1.0.3912.50\runtimes\win-x86\native_uap\Microsoft.Web.WebView2.Core.dll">
+      <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\Microsoft.InteractiveExperiences.Projection.dll">
+      <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\Microsoft.WinUI.dll">
+      <PackagePath>Microsoft.WinUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\Microsoft.Web.WebView2.Core.Projection.dll">
+      <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\VBrowser.dll">
+      <PackagePath>VBrowser.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\Microsoft.Win32.Registry.dll">
+      <PackagePath>Microsoft.Win32.Registry.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Collections.Concurrent.dll">
+      <PackagePath>System.Collections.Concurrent.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Collections.Immutable.dll">
+      <PackagePath>System.Collections.Immutable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Collections.NonGeneric.dll">
+      <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Collections.dll">
+      <PackagePath>System.Collections.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.ComponentModel.Primitives.dll">
+      <PackagePath>System.ComponentModel.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.ComponentModel.TypeConverter.dll">
+      <PackagePath>System.ComponentModel.TypeConverter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.ComponentModel.dll">
+      <PackagePath>System.ComponentModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Diagnostics.Process.dll">
+      <PackagePath>System.Diagnostics.Process.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Diagnostics.StackTrace.dll">
+      <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Formats.Asn1.dll">
+      <PackagePath>System.Formats.Asn1.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.IO.Compression.ZipFile.dll">
+      <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.IO.Compression.dll">
+      <PackagePath>System.IO.Compression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.IO.MemoryMappedFiles.dll">
+      <PackagePath>System.IO.MemoryMappedFiles.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Linq.Expressions.dll">
+      <PackagePath>System.Linq.Expressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Linq.dll">
+      <PackagePath>System.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Net.Http.dll">
+      <PackagePath>System.Net.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Net.NameResolution.dll">
+      <PackagePath>System.Net.NameResolution.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Net.NetworkInformation.dll">
+      <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Net.Primitives.dll">
+      <PackagePath>System.Net.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Net.Quic.dll">
+      <PackagePath>System.Net.Quic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Net.Security.dll">
+      <PackagePath>System.Net.Security.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Net.Sockets.dll">
+      <PackagePath>System.Net.Sockets.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.ObjectModel.dll">
+      <PackagePath>System.ObjectModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Private.CoreLib.dll">
+      <PackagePath>System.Private.CoreLib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Private.Uri.dll">
+      <PackagePath>System.Private.Uri.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Reflection.Metadata.dll">
+      <PackagePath>System.Reflection.Metadata.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Runtime.InteropServices.dll">
+      <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Runtime.Numerics.dll">
+      <PackagePath>System.Runtime.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Security.Claims.dll">
+      <PackagePath>System.Security.Claims.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Security.Cryptography.dll">
+      <PackagePath>System.Security.Cryptography.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Security.Principal.Windows.dll">
+      <PackagePath>System.Security.Principal.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.Threading.Channels.dll">
+      <PackagePath>System.Threading.Channels.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\System.dll">
+      <PackagePath>System.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\Microsoft.Windows.SDK.NET.dll">
+      <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\linked\WinRT.Runtime.dll">
+      <PackagePath>WinRT.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\obj\x86\Release\net9.0-windows10.0.19041.0\win-x86\VBrowser.deps.json">
+      <PackagePath>VBrowser.deps.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\Assets\VBrowser.ico">
+      <PackagePath>Assets\VBrowser.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\.nuget\packages\microsoft.web.webview2\1.0.3912.50\build\..\lib\Microsoft.Web.WebView2.Core.winmd">
+      <PackagePath>Microsoft.Web.WebView2.Core.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Varun\source\repos\VBrowser\VBrowser\bin\x86\Release\net9.0-windows10.0.19041.0\win-x86\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.runtime\1.8.260317003\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.8.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.8</Name>
+      <Version>8000.806.2252.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.8, MinVersion = 8000.806.2252.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.runtime\1.8.260317003\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.8.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.runtime\1.8.260317003\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.8.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.8</Name>
+      <Version>8000.806.2252.0</Version>
+      <Architecture>win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.8, MinVersion = 8000.806.2252.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.runtime\1.8.260317003\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.8.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.runtime\1.8.260317003\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.8.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.8</Name>
+      <Version>8000.806.2252.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.8, MinVersion = 8000.806.2252.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.runtime\1.8.260317003\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.8.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.runtime\1.8.260317003\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.8.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.8</Name>
+      <Version>8000.806.2252.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.8, MinVersion = 8000.806.2252.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Varun\.nuget\packages\microsoft.windowsappsdk.runtime\1.8.260317003\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.8.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

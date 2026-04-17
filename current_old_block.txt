@@ -1,0 +1,268 @@
+
+> VBrowser\MainWindow.xaml:99:            <!-- Toolbar -->
+  VBrowser\MainWindow.xaml:100:            <Grid x:Name="ToolbarGrid" Grid.Row="0" Background="Transparent" Padding="8,8,8,6">
+  VBrowser\MainWindow.xaml:101:                <Border CornerRadius="18"
+  VBrowser\MainWindow.xaml:102:                        BorderThickness="1"
+  VBrowser\MainWindow.xaml:103:                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:104:                        Background="{ThemeResource LayerFillColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:105:                        Padding="8,8,8,10">
+  VBrowser\MainWindow.xaml:106:                    <Border.Shadow>
+  VBrowser\MainWindow.xaml:107:                        <ThemeShadow/>
+  VBrowser\MainWindow.xaml:108:                    </Border.Shadow>
+  VBrowser\MainWindow.xaml:109:
+  VBrowser\MainWindow.xaml:110:                    <Grid>
+  VBrowser\MainWindow.xaml:111:                        <Grid.RowDefinitions>
+  VBrowser\MainWindow.xaml:112:                            <RowDefinition Height="Auto"/>
+  VBrowser\MainWindow.xaml:113:                            <RowDefinition Height="Auto"/>
+  VBrowser\MainWindow.xaml:114:                        </Grid.RowDefinitions>
+  VBrowser\MainWindow.xaml:115:
+  VBrowser\MainWindow.xaml:116:                        <!-- Row 1: Navigation + Tabs Space + Menu -->
+  VBrowser\MainWindow.xaml:117:                        <Grid Grid.Row="0" Padding="0,0,0,6">
+  VBrowser\MainWindow.xaml:118:                            <Grid.ColumnDefinitions>
+  VBrowser\MainWindow.xaml:119:                                <ColumnDefinition Width="Auto"/>
+  VBrowser\MainWindow.xaml:120:                                <ColumnDefinition Width="Auto"/>
+  VBrowser\MainWindow.xaml:121:                                <ColumnDefinition Width="*"/>
+  VBrowser\MainWindow.xaml:122:                                <ColumnDefinition Width="Auto"/>
+  VBrowser\MainWindow.xaml:123:                            </Grid.ColumnDefinitions>
+  VBrowser\MainWindow.xaml:124:
+  VBrowser\MainWindow.xaml:125:                            <!-- Vertical Tabs Toggle (shown when vertical tabs enabled) -->
+  VBrowser\MainWindow.xaml:126:                            <Button x:Name="ExpandSidebarButton" Grid.Column="0"
+  VBrowser\MainWindow.xaml:127:                                    Click="ExpandSidebar_Click"
+  VBrowser\MainWindow.xaml:128:                                    Visibility="Collapsed"
+  VBrowser\MainWindow.xaml:129:                                    Width="34" Height="34" CornerRadius="12"
+  VBrowser\MainWindow.xaml:130:                                    Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:131:                                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:132:                                    BorderThickness="1"
+  VBrowser\MainWindow.xaml:133:                                    Padding="0"
+  VBrowser\MainWindow.xaml:134:                                    ToolTipService.ToolTip="Show vertical tabs"
+  VBrowser\MainWindow.xaml:135:                                    Margin="0,0,6,0">
+  VBrowser\MainWindow.xaml:136:                                <FontIcon Glyph="&#xE89F;" FontSize="15"
+  VBrowser\MainWindow.xaml:137:                                          Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+  VBrowser\MainWindow.xaml:138:                            </Button>
+  VBrowser\MainWindow.xaml:139:
+  VBrowser\MainWindow.xaml:140:                            <!-- Navigation Buttons -->
+  VBrowser\MainWindow.xaml:141:                            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="6">
+  VBrowser\MainWindow.xaml:142:                                <Button x:Name="BackButton"
+  VBrowser\MainWindow.xaml:143:                                        Click="BackButton_Click"
+  VBrowser\MainWindow.xaml:144:                                        Width="34" Height="34" CornerRadius="12"
+  VBrowser\MainWindow.xaml:145:                                        Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:146:                                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:147:                                        BorderThickness="1"
+  VBrowser\MainWindow.xaml:148:                                        Padding="0">
+  VBrowser\MainWindow.xaml:149:                                    <FontIcon Glyph="&#xE72B;" FontSize="15" Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+  VBrowser\MainWindow.xaml:150:                                </Button>
+  VBrowser\MainWindow.xaml:151:                                <Button x:Name="ForwardButton"
+  VBrowser\MainWindow.xaml:152:                                        Click="ForwardButton_Click"
+  VBrowser\MainWindow.xaml:153:                                        Width="34" Height="34" CornerRadius="12"
+  VBrowser\MainWindow.xaml:154:                                        Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:155:                                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:156:                                        BorderThickness="1"
+  VBrowser\MainWindow.xaml:157:                                        Padding="0">
+  VBrowser\MainWindow.xaml:158:                                    <FontIcon Glyph="&#xE72A;" FontSize="15" Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+  VBrowser\MainWindow.xaml:159:                                </Button>
+  VBrowser\MainWindow.xaml:160:                                <Button x:Name="RefreshButton"
+  VBrowser\MainWindow.xaml:161:                                        Click="RefreshButton_Click"
+  VBrowser\MainWindow.xaml:162:                                        Width="34" Height="34" CornerRadius="12"
+  VBrowser\MainWindow.xaml:163:                                        Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:164:                                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:165:                                        BorderThickness="1"
+  VBrowser\MainWindow.xaml:166:                                        Padding="0">
+  VBrowser\MainWindow.xaml:167:                                    <FontIcon Glyph="&#xE72C;" FontSize="15" Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+  VBrowser\MainWindow.xaml:168:                                </Button>
+  VBrowser\MainWindow.xaml:169:                            </StackPanel>
+  VBrowser\MainWindow.xaml:170:
+  VBrowser\MainWindow.xaml:171:                            <!-- Horizontal Tab Strip (hidden when vertical tabs enabled) -->
+  VBrowser\MainWindow.xaml:172:                            <TabView x:Name="BrowserTabView"
+  VBrowser\MainWindow.xaml:173:                                     Grid.Column="2"
+  VBrowser\MainWindow.xaml:174:                                     Margin="10,0"
+  VBrowser\MainWindow.xaml:175:                                     VerticalAlignment="Center"
+  VBrowser\MainWindow.xaml:176:                                     Height="38"
+  VBrowser\MainWindow.xaml:177:                                     Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:178:                                     BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:179:                                     BorderThickness="1"
+  VBrowser\MainWindow.xaml:180:                                     IsAddTabButtonVisible="True"
+  VBrowser\MainWindow.xaml:181:                                     AddTabButtonClick="BrowserTabView_AddTabButtonClick"
+  VBrowser\MainWindow.xaml:182:                                     SelectionChanged="BrowserTabView_SelectionChanged"
+  VBrowser\MainWindow.xaml:183:                                     TabCloseRequested="BrowserTabView_TabCloseRequested">
+  VBrowser\MainWindow.xaml:184:                                <TabViewItem x:Name="Tab1" IsClosable="True" Header="New Tab">
+  VBrowser\MainWindow.xaml:185:                                    <TabViewItem.IconSource>
+  VBrowser\MainWindow.xaml:186:                                        <SymbolIconSource Symbol="World"/>
+  VBrowser\MainWindow.xaml:187:                                    </TabViewItem.IconSource>
+  VBrowser\MainWindow.xaml:188:                                </TabViewItem>
+  VBrowser\MainWindow.xaml:189:                            </TabView>
+  VBrowser\MainWindow.xaml:190:
+  VBrowser\MainWindow.xaml:191:                            <!-- Three-dot Menu -->
+  VBrowser\MainWindow.xaml:192:                            <Button Grid.Column="3"
+  VBrowser\MainWindow.xaml:193:                                    Width="34" Height="34" CornerRadius="12"
+  VBrowser\MainWindow.xaml:194:                                    Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:195:                                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:196:                                    BorderThickness="1"
+  VBrowser\MainWindow.xaml:197:                                    Padding="0">
+  VBrowser\MainWindow.xaml:198:                                <FontIcon Glyph="&#xE712;" FontSize="15" Foreground="{ThemeResource TextFillColorPrimaryBrush}"/>
+  VBrowser\MainWindow.xaml:199:                                <Button.Flyout>
+  VBrowser\MainWindow.xaml:200:                                    <MenuFlyout>
+  VBrowser\MainWindow.xaml:201:                                        <MenuFlyoutItem Text="New Tab" Click="NewTab_Click">
+  VBrowser\MainWindow.xaml:202:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:203:                                                <SymbolIcon Symbol="Add"/>
+  VBrowser\MainWindow.xaml:204:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:205:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:206:                                        <MenuFlyoutItem Text="New Private Tab" Click="NewPrivateTab_Click">
+  VBrowser\MainWindow.xaml:207:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:208:                                                <FontIcon Glyph="&#xE72E;"/>
+  VBrowser\MainWindow.xaml:209:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:210:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:211:                                        <MenuFlyoutItem Text="History" Click="History_Click">
+  VBrowser\MainWindow.xaml:212:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:213:                                                <SymbolIcon Symbol="Clock"/>
+  VBrowser\MainWindow.xaml:214:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:215:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:216:                                        <MenuFlyoutItem Text="Downloads" Click="Downloads_Click">
+  VBrowser\MainWindow.xaml:217:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:218:                                                <SymbolIcon Symbol="Download"/>
+  VBrowser\MainWindow.xaml:219:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:220:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:221:                                        <MenuFlyoutItem Text="Clear browsing data" Click="ClearBrowsingData_Click">
+  VBrowser\MainWindow.xaml:222:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:223:                                                <SymbolIcon Symbol="Delete"/>
+  VBrowser\MainWindow.xaml:224:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:225:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:226:                                        <MenuFlyoutItem Text="Copy Link" Click="CopyLink_Click">
+  VBrowser\MainWindow.xaml:227:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:228:                                                <SymbolIcon Symbol="Copy"/>
+  VBrowser\MainWindow.xaml:229:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:230:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:231:                                        <MenuFlyoutSeparator/>
+  VBrowser\MainWindow.xaml:232:                                        <MenuFlyoutItem Text="Settings" Click="Settings_Click">
+  VBrowser\MainWindow.xaml:233:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:234:                                                <SymbolIcon Symbol="Setting"/>
+  VBrowser\MainWindow.xaml:235:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:236:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:237:                                        <MenuFlyoutItem Text="Flags" Click="Flags_Click">
+  VBrowser\MainWindow.xaml:238:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:239:                                                <FontIcon Glyph="&#xE7BA;"/>
+  VBrowser\MainWindow.xaml:240:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:241:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:242:                                        <MenuFlyoutItem Text="About" Click="About_Click">
+  VBrowser\MainWindow.xaml:243:                                            <MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:244:                                                <SymbolIcon Symbol="Help"/>
+  VBrowser\MainWindow.xaml:245:                                            </MenuFlyoutItem.Icon>
+  VBrowser\MainWindow.xaml:246:                                        </MenuFlyoutItem>
+  VBrowser\MainWindow.xaml:247:                                    </MenuFlyout>
+  VBrowser\MainWindow.xaml:248:                                </Button.Flyout>
+  VBrowser\MainWindow.xaml:249:                            </Button>
+  VBrowser\MainWindow.xaml:250:                        </Grid>
+  VBrowser\MainWindow.xaml:251:
+  VBrowser\MainWindow.xaml:252:                        <!-- Row 2: Full Width Address Bar -->
+  VBrowser\MainWindow.xaml:253:                        <Grid Grid.Row="1" Padding="2,0,2,0">
+  VBrowser\MainWindow.xaml:254:                            <Grid.ColumnDefinitions>
+  VBrowser\MainWindow.xaml:255:                                <ColumnDefinition Width="*"/>
+  VBrowser\MainWindow.xaml:256:                                <ColumnDefinition Width="Auto"/>
+  VBrowser\MainWindow.xaml:257:                            </Grid.ColumnDefinitions>
+  VBrowser\MainWindow.xaml:258:
+  VBrowser\MainWindow.xaml:259:                            <!-- Address Bar -->
+  VBrowser\MainWindow.xaml:260:                            <Border x:Name="AddressBarBorder" Grid.Column="0"
+  VBrowser\MainWindow.xaml:261:                                    Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:262:                                    CornerRadius="22"
+  VBrowser\MainWindow.xaml:263:                                    Height="42"
+  VBrowser\MainWindow.xaml:264:                                    Margin="0,0,10,0"
+  VBrowser\MainWindow.xaml:265:                                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+  VBrowser\MainWindow.xaml:266:                                    BorderThickness="1">
+  VBrowser\MainWindow.xaml:267:                                <Border.Shadow>
+  VBrowser\MainWindow.xaml:268:                                    <ThemeShadow/>
+  VBrowser\MainWindow.xaml:269:                                </Border.Shadow>
+  VBrowser\MainWindow.xaml:270:                                <Grid>
+  VBrowser\MainWindow.xaml:271:                                    <Grid.ColumnDefinitions>
+  VBrowser\MainWindow.xaml:272:                                        <ColumnDefinition Width="Auto"/>
+  VBrowser\MainWindow.xaml:273:                                        <ColumnDefinition Width="*"/>
+  VBrowser\MainWindow.xaml:274:                                        <ColumnDefinition Width="Auto"/>
+  VBrowser\MainWindow.xaml:275:                                        <ColumnDefinition Width="Auto"/>
+  VBrowser\MainWindow.xaml:276:                                    </Grid.ColumnDefinitions>
+  VBrowser\MainWindow.xaml:277:
+  VBrowser\MainWindow.xaml:278:                                    <Button x:Name="SecurityIndicatorButton" Grid.Column="0"
+  VBrowser\MainWindow.xaml:279:                                            Click="SecurityIndicator_Click"
+  VBrowser\MainWindow.xaml:280:                                            Width="30" Height="30" CornerRadius="15"
+  VBrowser\MainWindow.xaml:281:                                            Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:282:                                            BorderThickness="0"
+  VBrowser\MainWindow.xaml:283:                                            Padding="0"
+  VBrowser\MainWindow.xaml:284:                                            Margin="8,0,4,0"
+  VBrowser\MainWindow.xaml:285:                                            ToolTipService.ToolTip="Connection is secure">
+  VBrowser\MainWindow.xaml:286:                                        <FontIcon x:Name="SecurityIcon" Glyph="&#xE72E;" FontSize="12"
+  VBrowser\MainWindow.xaml:287:                                                  Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+  VBrowser\MainWindow.xaml:288:                                    </Button>
+  VBrowser\MainWindow.xaml:289:
+  VBrowser\MainWindow.xaml:290:                                    <AutoSuggestBox x:Name="AddressBar"
+  VBrowser\MainWindow.xaml:291:                                                    Grid.Column="1"
+  VBrowser\MainWindow.xaml:292:                                                    Background="Transparent"
+  VBrowser\MainWindow.xaml:293:                                                    BorderThickness="0"
+  VBrowser\MainWindow.xaml:294:                                                    CornerRadius="0"
+  VBrowser\MainWindow.xaml:295:                                                    FontSize="14"
+  VBrowser\MainWindow.xaml:296:                                                    FontWeight="Normal"
+  VBrowser\MainWindow.xaml:297:                                                    VerticalAlignment="Center"
+  VBrowser\MainWindow.xaml:298:                                                    HorizontalAlignment="Stretch"
+  VBrowser\MainWindow.xaml:299:                                                    Margin="4,0,0,0"
+  VBrowser\MainWindow.xaml:300:                                                    UpdateTextOnSelect="True"
+  VBrowser\MainWindow.xaml:301:                                                    TextChanged="AddressBar_TextChanged"
+  VBrowser\MainWindow.xaml:302:                                                    SuggestionChosen="AddressBar_SuggestionChosen"
+  VBrowser\MainWindow.xaml:303:                                                    QuerySubmitted="AddressBar_QuerySubmitted"
+  VBrowser\MainWindow.xaml:304:                                                    KeyDown="AddressBar_KeyDown"
+  VBrowser\MainWindow.xaml:305:                                                    GotFocus="AddressBar_GotFocus"
+  VBrowser\MainWindow.xaml:306:                                                    LostFocus="AddressBar_LostFocus"
+  VBrowser\MainWindow.xaml:307:                                                    PointerPressed="AddressBar_PointerPressed"
+  VBrowser\MainWindow.xaml:308:                                                    PlaceholderText="Search the web or type a URL"
+  VBrowser\MainWindow.xaml:309:                                                    Text="https://www.google.com/">
+  VBrowser\MainWindow.xaml:310:                                        <AutoSuggestBox.Resources>
+  VBrowser\MainWindow.xaml:311:                                            <Style TargetType="TextBox">
+  VBrowser\MainWindow.xaml:312:                                                <Setter Property="FontSize" Value="14"/>
+  VBrowser\MainWindow.xaml:313:                                                <Setter Property="Padding" Value="8,4,8,4"/>
+  VBrowser\MainWindow.xaml:314:                                                <Setter Property="VerticalAlignment" Value="Center"/>
+  VBrowser\MainWindow.xaml:315:                                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+  VBrowser\MainWindow.xaml:316:                                            </Style>
+  VBrowser\MainWindow.xaml:317:                                        </AutoSuggestBox.Resources>
+  VBrowser\MainWindow.xaml:318:                                    </AutoSuggestBox>
+  VBrowser\MainWindow.xaml:319:
+  VBrowser\MainWindow.xaml:320:                                    <Button x:Name="ClearAddressButton" Grid.Column="2"
+  VBrowser\MainWindow.xaml:321:                                            Click="ClearAddress_Click"
+  VBrowser\MainWindow.xaml:322:                                            Width="28" Height="28" CornerRadius="14"
+  VBrowser\MainWindow.xaml:323:                                            Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:324:                                            BorderThickness="0"
+  VBrowser\MainWindow.xaml:325:                                            Padding="0"
+  VBrowser\MainWindow.xaml:326:                                            Margin="0,0,4,0"
+  VBrowser\MainWindow.xaml:327:                                            Visibility="Collapsed"
+  VBrowser\MainWindow.xaml:328:                                            ToolTipService.ToolTip="Clear">
+  VBrowser\MainWindow.xaml:329:                                        <FontIcon Glyph="&#xE711;" FontSize="11"
+  VBrowser\MainWindow.xaml:330:                                                  Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+  VBrowser\MainWindow.xaml:331:                                    </Button>
+  VBrowser\MainWindow.xaml:332:
+  VBrowser\MainWindow.xaml:333:                                    <Border Grid.Column="3"
+  VBrowser\MainWindow.xaml:334:                                            VerticalAlignment="Center"
+  VBrowser\MainWindow.xaml:335:                                            Margin="0,0,12,0"
+  VBrowser\MainWindow.xaml:336:                                            Padding="8,3"
+  VBrowser\MainWindow.xaml:337:                                            CornerRadius="8"
+  VBrowser\MainWindow.xaml:338:                                            Background="{ThemeResource SubtleFillColorSecondaryBrush}">
+  VBrowser\MainWindow.xaml:339:                                        <TextBlock Text="Ctrl+L"
+  VBrowser\MainWindow.xaml:340:                                                   FontSize="11"
+  VBrowser\MainWindow.xaml:341:                                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+  VBrowser\MainWindow.xaml:342:                                    </Border>
+  VBrowser\MainWindow.xaml:343:                                </Grid>
+  VBrowser\MainWindow.xaml:344:                            </Border>
+  VBrowser\MainWindow.xaml:345:
+  VBrowser\MainWindow.xaml:346:                            <Button x:Name="GoButton"
+  VBrowser\MainWindow.xaml:347:                                    Grid.Column="1"
+  VBrowser\MainWindow.xaml:348:                                    Click="GoButton_Click"
+  VBrowser\MainWindow.xaml:349:                                    CornerRadius="21"
+  VBrowser\MainWindow.xaml:350:                                    Height="42"
+  VBrowser\MainWindow.xaml:351:                                    Width="46"
+  VBrowser\MainWindow.xaml:352:                                    BorderBrush="{ThemeResource AccentFillColorSecondaryBrush}"
+  VBrowser\MainWindow.xaml:353:                                    BorderThickness="1"
+  VBrowser\MainWindow.xaml:354:                                    Background="{ThemeResource AccentFillColorDefaultBrush}">
+  VBrowser\MainWindow.xaml:355:                                <FontIcon Glyph="&#xE72A;"
+  VBrowser\MainWindow.xaml:356:                                          FontSize="14"
+  VBrowser\MainWindow.xaml:357:                                          Foreground="{ThemeResource TextOnAccentFillColorPrimaryBrush}"/>
+  VBrowser\MainWindow.xaml:358:                            </Button>
+  VBrowser\MainWindow.xaml:359:                        </Grid>
+  VBrowser\MainWindow.xaml:360:                    </Grid>
+  VBrowser\MainWindow.xaml:361:                </Border>
+  VBrowser\MainWindow.xaml:362:            </Grid>
+  VBrowser\MainWindow.xaml:363:
+  VBrowser\MainWindow.xaml:364:            <!-- Progress Bar -->
+

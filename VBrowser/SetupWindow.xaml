@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="VBrowser.SetupWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Welcome to VBrowser">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid Background="{ThemeResource LayerFillColorDefaultBrush}">
+        <Border
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Padding="0"
+            Margin="16"
+            CornerRadius="14"
+            Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="260"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border
+                    Grid.Column="0"
+                    CornerRadius="14,0,0,14"
+                    Padding="24"
+                    Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+
+                    <StackPanel Spacing="20">
+                        <StackPanel Spacing="6">
+                            <TextBlock Text="VBrowser Setup" FontSize="24" FontWeight="SemiBold"/>
+                            <TextBlock Text="One-time guided setup" Opacity="0.72"/>
+                        </StackPanel>
+
+                        <StackPanel Spacing="14">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="24"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Ellipse x:Name="StepDot1" Width="12" Height="12" Fill="{ThemeResource AccentFillColorDefaultBrush}" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="StepLabel1" Grid.Column="1" Text="Welcome" VerticalAlignment="Center" Margin="8,0,0,0"/>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="24"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Ellipse x:Name="StepDot2" Width="12" Height="12" Fill="{ThemeResource CardStrokeColorDefaultBrush}" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="StepLabel2" Grid.Column="1" Text="Appearance" VerticalAlignment="Center" Margin="8,0,0,0" Opacity="0.7"/>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="24"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Ellipse x:Name="StepDot3" Width="12" Height="12" Fill="{ThemeResource CardStrokeColorDefaultBrush}" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="StepLabel3" Grid.Column="1" Text="Search and home" VerticalAlignment="Center" Margin="8,0,0,0" Opacity="0.7"/>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="24"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Ellipse x:Name="StepDot4" Width="12" Height="12" Fill="{ThemeResource CardStrokeColorDefaultBrush}" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="StepLabel4" Grid.Column="1" Text="Performance" VerticalAlignment="Center" Margin="8,0,0,0" Opacity="0.7"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <Border
+                            Margin="0,10,0,0"
+                            Padding="12"
+                            CornerRadius="10"
+                            Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                            <TextBlock
+                                Text="This setup appears once on first launch. You can change these values later in Settings."
+                                Opacity="0.72"
+                                TextWrapping="WrapWholeWords"/>
+                        </Border>
+                    </StackPanel>
+                </Border>
+
+                <Grid Grid.Column="1" Padding="30,28,30,24">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Spacing="8">
+                        <TextBlock x:Name="StepTitleText" FontSize="34" FontWeight="SemiBold"/>
+                        <TextBlock x:Name="StepSubtitleText" FontSize="14" Opacity="0.72"/>
+                    </StackPanel>
+
+                    <Grid Grid.Row="1" Margin="0,18,0,18">
+                        <Grid x:Name="Step1Panel">
+                            <Border Padding="18" CornerRadius="12" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                                <StackPanel Spacing="12">
+                                    <TextBlock Text="Lets get VBrowser ready in under a minute." FontSize="20" FontWeight="SemiBold"/>
+                                    <TextBlock Text="What this setup configures:" Opacity="0.72"/>
+                                    <TextBlock Text="- Theme preference"/>
+                                    <TextBlock Text="- Search engine and homepage"/>
+                                    <TextBlock Text="- Performance defaults"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+
+                        <Grid x:Name="Step2Panel" Visibility="Collapsed">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Grid.Column="0" Padding="16" CornerRadius="12" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}" Margin="0,0,10,0">
+                                <StackPanel Spacing="12">
+                                    <TextBlock Text="Choose your look" FontSize="20" FontWeight="SemiBold"/>
+                                    <ToggleSwitch x:Name="DarkModeToggle" Header="Dark mode" Toggled="DarkModeToggle_Toggled"/>
+                                    <TextBlock Text="You can switch themes anytime from Settings." Opacity="0.72"/>
+                                </StackPanel>
+                            </Border>
+
+                            <Border Grid.Column="1" Padding="16" CornerRadius="12" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}" Margin="10,0,0,0">
+                                <StackPanel Spacing="10">
+                                    <TextBlock Text="Preview" FontSize="20" FontWeight="SemiBold"/>
+                                    <TextBlock x:Name="ThemePreviewTitleText" FontSize="16" FontWeight="SemiBold"/>
+                                    <TextBlock x:Name="ThemePreviewBodyText" TextWrapping="WrapWholeWords" Opacity="0.72"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+
+                        <Grid x:Name="Step3Panel" Visibility="Collapsed">
+                            <StackPanel Spacing="14">
+                                <Border Padding="16" CornerRadius="12" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                                    <StackPanel Spacing="10">
+                                        <TextBlock Text="Set search engine" FontSize="20" FontWeight="SemiBold"/>
+                                        <ComboBox x:Name="SearchEngineCombo" Header="Default search engine" MaxWidth="320" SelectionChanged="SearchEngineCombo_SelectionChanged">
+                                            <ComboBoxItem Content="Google" />
+                                            <ComboBoxItem Content="Bing" />
+                                            <ComboBoxItem Content="DuckDuckGo" />
+                                            <ComboBoxItem Content="Yahoo" />
+                                            <ComboBoxItem Content="Yandex" />
+                                        </ComboBox>
+                                    </StackPanel>
+                                </Border>
+
+                                <Border Padding="16" CornerRadius="12" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                                    <StackPanel Spacing="10">
+                                        <TextBlock Text="Set homepage" FontSize="20" FontWeight="SemiBold"/>
+                                        <TextBox
+                                            x:Name="HomepageTextBox"
+                                            Header="Homepage URL"
+                                            PlaceholderText="https://www.google.com"
+                                            TextChanged="HomepageTextBox_TextChanged"
+                                            MaxWidth="460"/>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="Step4Panel" Visibility="Collapsed">
+                            <StackPanel Spacing="14">
+                                <Border Padding="16" CornerRadius="12" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                                    <StackPanel Spacing="10">
+                                        <TextBlock Text="Performance defaults" FontSize="20" FontWeight="SemiBold"/>
+                                        <ToggleSwitch x:Name="MemorySaverToggle" Header="Memory saver" Toggled="PerformanceToggle_Toggled"/>
+                                        <ToggleSwitch x:Name="HighEfficiencyToggle" Header="High efficiency" Toggled="PerformanceToggle_Toggled"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <Border Padding="16" CornerRadius="12" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                                    <StackPanel Spacing="8">
+                                        <TextBlock Text="Summary" FontSize="20" FontWeight="SemiBold"/>
+                                        <TextBlock x:Name="SummaryTextBlock" TextWrapping="WrapWholeWords" Opacity="0.8"/>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            x:Name="StepCounterText"
+                            VerticalAlignment="Center"
+                            Opacity="0.72"/>
+
+                        <Button
+                            x:Name="UseDefaultsButton"
+                            Grid.Column="1"
+                            Content="Use defaults"
+                            Margin="0,0,10,0"
+                            Click="UseDefaults_Click"/>
+
+                        <Button
+                            x:Name="BackStepButton"
+                            Grid.Column="2"
+                            Content="Back"
+                            Margin="0,0,10,0"
+                            Click="BackStep_Click"/>
+
+                        <Button
+                            x:Name="NextStepButton"
+                            Grid.Column="3"
+                            Content="Next"
+                            Style="{StaticResource AccentButtonStyle}"
+                            Click="NextStep_Click"/>
+
+                        <Button
+                            x:Name="StartBrowsingButton"
+                            Grid.Column="3"
+                            Content="Start browsing"
+                            Style="{StaticResource AccentButtonStyle}"
+                            Click="StartBrowsing_Click"
+                            Visibility="Collapsed"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

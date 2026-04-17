@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="VBrowser.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VBrowser"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Storyboard x:Name="PageLoadAnimation">
+            <DoubleAnimation Storyboard.TargetName="MainContentPanel" 
+                           Storyboard.TargetProperty="Opacity"
+                           From="0" To="1" 
+                           Duration="0:0:0.6">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="MainContentPanel"
+                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                           From="50" To="0"
+                           Duration="0:0:0.6">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        
+        <Storyboard x:Name="LogoFloatAnimation" RepeatBehavior="Forever" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="LogoContainer"
+                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                           From="0" To="-8"
+                           Duration="0:0:2">
+                <DoubleAnimation.EasingFunction>
+                    <SineEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        
+        <Storyboard x:Name="GlowPulseAnimation" RepeatBehavior="Forever" AutoReverse="True">
+            <DoubleAnimation Storyboard.TargetName="LogoGlow"
+                           Storyboard.TargetProperty="Opacity"
+                           From="0.3" To="0.6"
+                           Duration="0:0:1.5">
+                <DoubleAnimation.EasingFunction>
+                    <SineEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid>
+        <!-- Animated Gradient Background -->
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" x:Name="GradientBrush">
+                    <GradientStop Color="#1a1a2e" Offset="0"/>
+                    <GradientStop Color="#16213e" Offset="0.3"/>
+                    <GradientStop Color="#0f3460" Offset="0.6"/>
+                    <GradientStop Color="#1a1a2e" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            
+            <!-- Floating Orbs -->
+            <Canvas x:Name="OrbsCanvas">
+                <Ellipse Width="300" Height="300" Fill="#e94560" Opacity="0.1" Canvas.Left="-100" Canvas.Top="100">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform x:Name="Orb1"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="200" Height="200" Fill="#533483" Opacity="0.15" Canvas.Left="500" Canvas.Top="300">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform x:Name="Orb2"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="150" Height="150" Fill="#0f3460" Opacity="0.2" Canvas.Left="200" Canvas.Top="500">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform x:Name="Orb3"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </Canvas>
+        </Grid>
+
+        <!-- Main Content -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="MainContentPanel" 
+                        MaxWidth="700" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                        Padding="40,80,40,40"
+                        Opacity="0">
+                <StackPanel.RenderTransform>
+                    <TranslateTransform Y="50"/>
+                </StackPanel.RenderTransform>
+                
+                <!-- Logo Section with Glow -->
+                <Grid HorizontalAlignment="Center" Margin="0,0,0,40">
+                    <!-- Glow Effect -->
+                    <Grid x:Name="LogoGlow" 
+                          Width="180" 
+                          Height="180" 
+                          Opacity="0.3"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center">
+                        <Grid.Background>
+                            <RadialGradientBrush>
+                                <GradientStop Color="#e94560" Offset="0"/>
+                                <GradientStop Color="Transparent" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Grid.Background>
+                    </Grid>
+                    
+                    <!-- Logo Container -->
+                    <Grid x:Name="LogoContainer" 
+                          Width="140" 
+                          Height="140" 
+                          CornerRadius="35"
+                          HorizontalAlignment="Center">
+                        <Grid.RenderTransform>
+                            <TranslateTransform Y="0"/>
+                        </Grid.RenderTransform>
+                        
+                        <Grid.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#e94560" Offset="0"/>
+                                <GradientStop Color="#533483" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        
+                        <!-- Inner Shadow Effect -->
+                        <Grid Width="136" Height="136" CornerRadius="33" Background="#1a1a2e" Opacity="0.3"/>
+                        
+                        <!-- Logo Text -->
+                        <TextBlock Text="VB" 
+                                   FontSize="56" 
+                                   FontWeight="ExtraBold" 
+                                   Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                        
+                        <!-- Shine Effect -->
+                        <Path Data="M0,0 L140,0 L140,50 L0,70 Z" Fill="White" Opacity="0.1"/>
+                    </Grid>
+                    
+                    <!-- Version Badge -->
+                    <Border CornerRadius="12" 
+                            Background="#e94560" 
+                            Padding="12,4,12,4"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Margin="0,0,-20,0">
+                        <TextBlock Text="v0.70" 
+                                   FontSize="12" 
+                                   FontWeight="SemiBold" 
+                                   Foreground="White"/>
+                    </Border>
+                </Grid>
+
+                <!-- App Name -->
+                <TextBlock Text="VBrowser" 
+                           FontSize="48" 
+                           FontWeight="Bold" 
+                           Foreground="White"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,8"/>
+                
+                <TextBlock Text="The Future of Browsing" 
+                           FontSize="18" 
+                           FontWeight="Light"
+                           Foreground="#AAAAAA"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,32"/>
+
+                <!-- Description Card -->
+                <Border CornerRadius="20" 
+                        Background="#15FFFFFF" 
+                        BorderBrush="#25FFFFFF"
+                        BorderThickness="1"
+                        Padding="32"
+                        Margin="0,0,0,24">
+                    <StackPanel Spacing="16">
+                        <TextBlock Text="A modern, lightning-fast web browser built with WinUI 3 and WebView2. Experience the web like never before with stunning performance, elegant design, and powerful features."
+                                   FontSize="16"
+                                   Foreground="#DDDDDD"
+                                   TextAlignment="Center"
+                                   TextWrapping="Wrap"
+                                   LineHeight="24"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Features Grid -->
+                <Grid Margin="0,0,0,24">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Border Grid.Column="0" 
+                            CornerRadius="16" 
+                            Background="#10FFFFFF"
+                            BorderBrush="#20FFFFFF"
+                            BorderThickness="1"
+                            Padding="20"
+                            Margin="0,0,8,0">
+                        <StackPanel HorizontalAlignment="Center">
+                            <FontIcon Glyph="&#xE7EE;" FontSize="28" Foreground="#e94560" Margin="0,0,0,8"/>
+                            <TextBlock Text="Fast" FontSize="14" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Lightning speed" FontSize="11" Foreground="#888888" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Grid.Column="1" 
+                            CornerRadius="16" 
+                            Background="#10FFFFFF"
+                            BorderBrush="#20FFFFFF"
+                            BorderThickness="1"
+                            Padding="20"
+                            Margin="4,0,4,0">
+                        <StackPanel HorizontalAlignment="Center">
+                            <FontIcon Glyph="&#xE785;" FontSize="28" Foreground="#533483" Margin="0,0,0,8"/>
+                            <TextBlock Text="Secure" FontSize="14" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Privacy first" FontSize="11" Foreground="#888888" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Grid.Column="2" 
+                            CornerRadius="16" 
+                            Background="#10FFFFFF"
+                            BorderBrush="#20FFFFFF"
+                            BorderThickness="1"
+                            Padding="20"
+                            Margin="8,0,0,0">
+                        <StackPanel HorizontalAlignment="Center">
+                            <FontIcon Glyph="&#xE771;" FontSize="28" Foreground="#0f3460" Margin="0,0,0,8"/>
+                            <TextBlock Text="Modern" FontSize="14" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center"/>
+                            <TextBlock Text="WinUI 3 design" FontSize="11" Foreground="#888888" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+
+                <!-- Third Party Notices -->
+                <Button x:Name="ThirdPartyButton" 
+                        Content="Third-party Notices"
+                        Click="ThirdPartyButton_Click"
+                        HorizontalAlignment="Center"
+                        Background="Transparent"
+                        BorderBrush="#40FFFFFF"
+                        BorderThickness="1"
+                        CornerRadius="20"
+                        Padding="20,10"
+                        Margin="0,0,0,32">
+                    <Button.Resources>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#CCCCCC"/>
+                    </Button.Resources>
+                </Button>
+
+                <!-- Footer -->
+                <StackPanel HorizontalAlignment="Center" Spacing="8">
+                    <TextBlock Text="Built with passion using WinUI 3 and WebView2" 
+                               FontSize="13" 
+                               Foreground="#777777"
+                               HorizontalAlignment="Center"/>
+                    <TextBlock Text=" 2026 VBrowser. All rights reserved." 
+                               FontSize="11" 
+                               Foreground="#555555"
+                               HorizontalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Back Button - MUST be declared last to be on top -->
+        <Button x:Name="BackButton" 
+                Click="BackButton_Click" 
+                Width="48" 
+                Height="48" 
+                CornerRadius="24"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="24,24,0,0"
+                Background="#30FFFFFF"
+                BorderThickness="0">
+            <FontIcon Glyph="&#xE72B;" FontSize="20" Foreground="White"/>
+        </Button>
+    </Grid>
+</Page>

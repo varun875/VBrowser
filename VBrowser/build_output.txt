@@ -1,0 +1,14 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\Varun\source\repos\VBrowser\VBrowser\MainWindow.xaml.cs(35,21): warning CS0414: The field 'MainWindow._privateTabCounter' is assigned but its value is never used [C:\Users\Varun\source\repos\VBrowser\VBrowser\VBrowser.csproj]
+C:\Users\Varun\source\repos\VBrowser\VBrowser\MainWindow.xaml.cs(35,21): warning CS0414: The field 'MainWindow._privateTabCounter' is assigned but its value is never used [C:\Users\Varun\source\repos\VBrowser\VBrowser\VBrowser.csproj]
+  VBrowser -> C:\Users\Varun\source\repos\VBrowser\VBrowser\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\VBrowser.dll
+
+Build succeeded.
+
+C:\Users\Varun\source\repos\VBrowser\VBrowser\MainWindow.xaml.cs(35,21): warning CS0414: The field 'MainWindow._privateTabCounter' is assigned but its value is never used [C:\Users\Varun\source\repos\VBrowser\VBrowser\VBrowser.csproj]
+C:\Users\Varun\source\repos\VBrowser\VBrowser\MainWindow.xaml.cs(35,21): warning CS0414: The field 'MainWindow._privateTabCounter' is assigned but its value is never used [C:\Users\Varun\source\repos\VBrowser\VBrowser\VBrowser.csproj]
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:22.43

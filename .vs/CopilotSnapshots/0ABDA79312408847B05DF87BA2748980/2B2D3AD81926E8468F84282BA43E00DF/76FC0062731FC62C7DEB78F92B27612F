@@ -1,0 +1,86 @@
+﻿using Microsoft.UI.Dispatching;
+using Microsoft.Web.WebView2.Core;
+using System;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+
+namespace VBrowser
+{
+    public sealed class DownloadManager
+    {
+        private static readonly Lazy<DownloadManager> LazyInstance = new(() => new DownloadManager());
+
+        public static DownloadManager Instance => LazyInstance.Value;
+
+        public ObservableCollection<DownloadItem> Downloads { get; } = new();
+
+        private DownloadManager()
+        {
+        }
+
+        public void TrackDownload(CoreWebView2DownloadStartingEventArgs args)
+        {
+            var operation = args.DownloadOperation;
+            if (operation == null)
+            {
+                Debug.WriteLine("[Download] DownloadOperation is null. Tracking aborted.");
+                return;
+            }
+
+            Debug.WriteLine($"[Download] TrackDownload called for URI: {operation.Uri}. Enqueueing to UI thread...");
+
+            RunOnUiThread(() =>
+            {
+                try
+                {
+                    Debug.WriteLine($"[Download] UI Thread executing download insertion for URI: {operation.Uri}");
+                    var trackedItem = new DownloadItem(operation);
+                    Downloads.Insert(0, trackedItem);
+                    Debug.WriteLine($"[Download] Successfully inserted trackedItem. Current Downloads collection count: {Downloads.Count}");
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"[Download] TrackDownload failed to create or insert item: {ex}");
+                }
+            });
+        }
+
+        public void ClearFinished()
+        {
+            void RemoveFinishedItems()
+            {
+                for (int i = Downloads.Count - 1; i >= 0; i--)
+                {
+                    if (Downloads[i].IsCompleted || Downloads[i].IsInterrupted)
+                    {
+                        Downloads.RemoveAt(i);
+                    }
+                }
+            }
+
+            RunOnUiThread(RemoveFinishedItems);
+        }
+
+        private void RunOnUiThread(Action action)
+        {
+            var dispatcherQueue = MainWindow.Instance?.DispatcherQueue;
+
+            // If we don't have a window-bound queue yet, fall back to the current thread.
+            if (dispatcherQueue == null)
+            {
+                dispatcherQueue = DispatcherQueue.GetForCurrentThread();
+            }
+
+            if (dispatcherQueue == null || dispatcherQueue.HasThreadAccess)
+            {
+                action();
+                return;
+            }
+
+            if (!dispatcherQueue.TryEnqueue(() => action()))
+            {
+                Debug.WriteLine("DownloadManager failed to enqueue UI work.");
+            }
+        }
+    }
+}

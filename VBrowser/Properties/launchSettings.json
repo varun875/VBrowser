@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VBrowser (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VBrowser (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
