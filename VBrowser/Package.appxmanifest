@@ -11,7 +11,7 @@
   <Identity
     Name="58174266-c3ef-440f-9f19-bfae0278f321"
     Publisher="CN=Varun"
-    Version="0.70.2.0" />
+    Version="0.70.4.0" />
 
   <mp:PhoneIdentity PhoneProductId="58174266-c3ef-440f-9f19-bfae0278f321" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

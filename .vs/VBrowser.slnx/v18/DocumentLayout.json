@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Varun\\source\\repos\\VBrowser\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D59A5015-E5D5-A320-99E3-FB2B836E9C09}|VBrowser\\VBrowser.csproj|c:\\users\\varun\\source\\repos\\vbrowser\\vbrowser\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59A5015-E5D5-A320-99E3-FB2B836E9C09}|VBrowser\\VBrowser.csproj|solutionrelative:vbrowser\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59A5015-E5D5-A320-99E3-FB2B836E9C09}|VBrowser\\VBrowser.csproj|c:\\users\\varun\\source\\repos\\vbrowser\\vbrowser\\browserpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59A5015-E5D5-A320-99E3-FB2B836E9C09}|VBrowser\\VBrowser.csproj|solutionrelative:vbrowser\\browserpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D59A5015-E5D5-A320-99E3-FB2B836E9C09}|VBrowser\\VBrowser.csproj|c:\\users\\varun\\source\\repos\\vbrowser\\vbrowser\\downloaditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D59A5015-E5D5-A320-99E3-FB2B836E9C09}|VBrowser\\VBrowser.csproj|solutionrelative:vbrowser\\downloaditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,19 +46,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "VBrowser\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\MainWindow.xaml.cs",
+              "RelativeToolTip": "VBrowser\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAMsCAAAAAAAAAAA9wNkCAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T17:37:42.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BrowserPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\BrowserPage.xaml.cs",
+              "RelativeDocumentMoniker": "VBrowser\\BrowserPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\BrowserPage.xaml.cs",
+              "RelativeToolTip": "VBrowser\\BrowserPage.xaml.cs",
+              "ViewState": "AgIAAIYBAAAAAAAAAAAswJQBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T17:31:32.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DownloadItem.cs",
               "DocumentMoniker": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\DownloadItem.cs",
               "RelativeDocumentMoniker": "VBrowser\\DownloadItem.cs",
               "ToolTip": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\DownloadItem.cs",
               "RelativeToolTip": "VBrowser\\DownloadItem.cs",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAswNMAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T15:21:15.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "App.g.i.cs",
               "DocumentMoniker": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\obj\\x86\\Release\\net9.0-windows10.0.19041.0\\win-x86\\App.g.i.cs",
               "RelativeDocumentMoniker": "VBrowser\\obj\\x86\\Release\\net9.0-windows10.0.19041.0\\win-x86\\App.g.i.cs",
@@ -58,12 +92,11 @@
               "RelativeToolTip": "VBrowser\\obj\\x86\\Release\\net9.0-windows10.0.19041.0\\win-x86\\App.g.i.cs",
               "ViewState": "AgIAABIAAAAAAAAAAADwvykAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T09:30:50.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T09:30:50.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DownloadsPage.g.cs",
               "DocumentMoniker": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\obj\\x86\\Release\\net9.0-windows10.0.19041.0\\win-x86\\DownloadsPage.g.cs",
               "RelativeDocumentMoniker": "VBrowser\\obj\\x86\\Release\\net9.0-windows10.0.19041.0\\win-x86\\DownloadsPage.g.cs",
@@ -75,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DownloadManager.cs",
               "DocumentMoniker": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\DownloadManager.cs",
               "RelativeDocumentMoniker": "VBrowser\\DownloadManager.cs",
@@ -87,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Microsoft.NET.Publish.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Publish.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Publish.targets",
@@ -99,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MainWindow.g.cs",
               "DocumentMoniker": "C:\\Users\\Varun\\source\\repos\\VBrowser\\VBrowser\\obj\\x64\\Debug\\net9.0-windows10.0.19041.0\\win-x64\\MainWindow.g.cs",
               "RelativeDocumentMoniker": "VBrowser\\obj\\x64\\Debug\\net9.0-windows10.0.19041.0\\win-x64\\MainWindow.g.cs",

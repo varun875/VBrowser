@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="VBrowser.FlagsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Background>
+        <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+    </Page.Background>
+
+    <Grid Padding="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="12" Margin="0,0,0,16">
+            <Button x:ConnectionId='7' Width="40" Height="40" CornerRadius="20"                         >
+                <SymbolIcon Symbol="Back"/>
+            </Button>
+            <StackPanel>
+                <TextBlock Text="Experimental Flags" FontSize="28" FontWeight="SemiBold"/>
+                <TextBlock Text="Open this page anytime from the address bar: vbrowser://flags" FontSize="12" Opacity="0.72"/>
+            </StackPanel>
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Spacing="16" MaxWidth="760">
+                <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" CornerRadius="8" Padding="16">
+                    <TextBlock Text="Flags are advanced controls. Some changes only apply after restart." TextWrapping="WrapWholeWords" Opacity="0.8"/>
+                </Border>
+
+                <TextBlock Text="Performance Flags" FontSize="18" FontWeight="SemiBold"/>
+                <StackPanel Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" CornerRadius="8" Padding="16" Spacing="12">
+                    <ToggleSwitch x:ConnectionId='3' x:Name="HardwareAccelerationToggle" Header="Hardware Acceleration" OnContent="On" OffContent="Off"                                             />
+                    <TextBlock Text="Uses the GPU for rendering and video decode." FontSize="12" Opacity="0.6" Margin="0,-8,0,0"/>
+
+                    <ToggleSwitch x:ConnectionId='4' x:Name="ParallelDownloadsToggle" Header="Parallel Downloads" OnContent="On" OffContent="Off"                                          />
+                    <TextBlock Text="Splits downloads into multiple streams when supported." FontSize="12" Opacity="0.6" Margin="0,-8,0,0"/>
+
+                    <ToggleSwitch x:ConnectionId='5' x:Name="MemorySaverToggle" Header="Memory Saver Mode" OnContent="On" OffContent="Off"                                    />
+                    <TextBlock Text="Suspends inactive tabs to lower memory usage." FontSize="12" Opacity="0.6" Margin="0,-8,0,0"/>
+
+                    <ToggleSwitch x:ConnectionId='6' x:Name="HighEfficiencyToggle" Header="High Efficiency Mode" OnContent="On" OffContent="Off"                                       />
+                    <TextBlock Text="Reduces background activity for lower power usage." FontSize="12" Opacity="0.6" Margin="0,-8,0,0"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <Button x:ConnectionId='2' Content="Reset All Flags"                             Style="{StaticResource AccentButtonStyle}"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

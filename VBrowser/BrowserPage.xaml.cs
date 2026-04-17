@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 
 namespace VBrowser
@@ -266,8 +267,12 @@ namespace VBrowser
                             <span class='ext-name'>Extension Folder: &nbsp;</span>
                             <span class='ext-id'>${ext}</span>
                         </div>
-                        <button class='btn remove-btn' onclick='removeExt("` + ext.replace(/\\/g, '\\\\') + `")'>Remove</button>
+                        <button class='btn remove-btn'>Remove</button>
                     `;
+                    const removeButton = card.querySelector('.remove-btn');
+                    if (removeButton) {
+                        removeButton.addEventListener('click', () => removeExt(ext));
+                    }
                     extList.appendChild(card);
                 });
             }
@@ -283,8 +288,9 @@ namespace VBrowser
 </body>
 </html>";
                 var utf8 = new System.IO.MemoryStream(System.Text.Encoding.UTF8.GetBytes(html));
+                var randomAccessStream = utf8.AsRandomAccessStream();
                 args.Response = sender.Environment.CreateWebResourceResponse(
-                    utf8, 200, "OK", "Content-Type: text/html");
+                    randomAccessStream, 200, "OK", "Content-Type: text/html");
             }
         }
 
